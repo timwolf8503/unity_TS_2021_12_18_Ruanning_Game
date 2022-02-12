@@ -167,6 +167,15 @@ MonoBehaviour:
   v2up: {x: 0, y: 1}
   v2one: {x: 1, y: 1}
   vector2A: {x: 0.1, y: 0.5}
+  KeyCode: 0
+  jump: 32
+  forwad: 100
+  left: 97
+  gogame: {fileID: 0}
+  gogamrea: {fileID: 0}
+  tra1: {fileID: 0}
+  cam: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!212 &151929088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -232,6 +241,96 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &627801032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 627801034}
+  - component: {fileID: 627801033}
+  m_Layer: 0
+  m_Name: "\u8A8D\u8B58\u7269\u4EF6"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &627801033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627801032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7220c762343f8141ae8223620e8d8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &627801034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627801032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &843518916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843518918}
+  - component: {fileID: 843518917}
+  m_Layer: 0
+  m_Name: "\u8A8D\u8B58\u904B\u7B97\u5B50"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &843518917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843518916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51771ef3836dfbf469a28f616712045d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: 10
+  B: 5
+  C: 50
+  D: 10
+--- !u!4 &843518918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843518916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.4688954, y: 0.7237914, z: -24.443373}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &881481178
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +375,15 @@ MonoBehaviour:
   v2up: {x: 0, y: 1}
   v2one: {x: 1, y: 1}
   vector2A: {x: 0.1, y: 0.5}
+  KeyCode: 0
+  jump: 32
+  forwad: 100
+  left: 97
+  gogame: {fileID: 0}
+  gogamrea: {fileID: 0}
+  tra1: {fileID: 0}
+  cam: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!212 &881481180
 SpriteRenderer:
   m_ObjectHideFlags: 0

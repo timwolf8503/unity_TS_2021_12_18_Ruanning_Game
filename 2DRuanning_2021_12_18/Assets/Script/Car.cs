@@ -1,4 +1,3 @@
-using System.Net.Http.Headers;
 using UnityEngine;  //引用Unity引擎空間
 
 //類別    類別名必須與檔案名稱一致大小寫也要一樣
@@ -30,12 +29,31 @@ public class Car : MonoBehaviour
     //public color  名稱=new(小寫)  color(Rf,Gf,Bf,Af);   最大值都是1
     public Color colerA =new Color(0.5f, 0, 0.5f);
     public Color colorB = new Color(0, 0.5f, 0.5f, 0.5f);
-    //向量 Vector 2~4
+    //向量 Vector 2~4 2維到4維
     public Vector2 vector2;
     public Vector2 Vector2 = Vector2.right;
     public Vector2 v2up = Vector2.up;
     public Vector2 v2one = Vector2.one;
     public Vector2 vector2A = new Vector2(0.1f, 0.5f);
+
+    //輸入按鍵  KeyCode
+    public KeyCode KeyCode;
+    public KeyCode jump = KeyCode.Space;
+    public KeyCode forwad = KeyCode.D;
+    public KeyCode left= KeyCode.A;
+
+    //遊戲物件(Hierearchy 內白色線條圖示)，預置物 Prefad
+    public GameObject gogame;
+    public GameObject gogamrea;
+
+    //元件    Component
+    //可以儲存屬性面板上所有粗體字元件
+    //*有空格要去掉
+    public Transform tra1;
+    public Camera cam;
+    public SpriteRenderer sr;
+
+
      #endregion
 }
 

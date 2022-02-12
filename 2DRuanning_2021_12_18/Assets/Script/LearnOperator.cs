@@ -8,6 +8,7 @@ public class LearnOperator : MonoBehaviour
     public float B = 5;
     public int C = 50;
     public int D = 10;
+    public int e = 1;
     private void Start()
     {
 
@@ -24,7 +25,23 @@ public class LearnOperator : MonoBehaviour
         print("除法 :" + (a / B));
         //餘數 %
         print("餘法 :" + (a % B));
+        //加一
+        // = 指定符號，先執行右邊運算再把結果指定給左邊
+        e = e + 1;
+        print("加一" + (e + 1));
+        //遞增
+        e++;
+        print(e++);
+        //遞減
+        e--;
+
+        //加十
+        e = e + 10;
+        print(e + 10);
+        print(e - 10);
+        //適用於加間乘除餘 -= += *= %=
         #endregion
+
         #region 運算子:比較
         //結果為布林值  true or false
         //大於 >

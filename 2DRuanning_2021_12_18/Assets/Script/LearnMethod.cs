@@ -76,7 +76,7 @@ public class LearnMethod : MonoBehaviour
     {
         float result = weight / (height * height);
         return result;
-
+     
     }
 
    

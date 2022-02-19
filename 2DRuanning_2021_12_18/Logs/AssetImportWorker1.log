@@ -1937,3 +1937,4 @@ Received Import Request.
 Start importing Assets/預製物/齒輪.prefab using Guid(ca24c036278c19d48beb72d8d6446c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d67080879303a975b6024b550e139c8') in 0.018144 seconds 
   Import took 0.025580 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

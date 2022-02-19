@@ -17,7 +17,7 @@ public class Learncondition : MonoBehaviour
 
 
 
-    public bool haskey =false;
+    public bool haskey = false;
     public int combo = 0;
     public string weapon;
 
@@ -26,7 +26,7 @@ public class Learncondition : MonoBehaviour
     //1.製作列舉(下拉選單)
     public enum Season
     {
-        spring,summer,fall,winter   
+        spring, summer, fall, winter
     }
 
     //2.實作列舉
@@ -36,7 +36,7 @@ public class Learncondition : MonoBehaviour
     {
         #region if判斷式
 
-     
+
         if (true)
         {
             print("我式判斷式if");
@@ -57,8 +57,8 @@ public class Learncondition : MonoBehaviour
             print("不能開門");
 
             #endregion
-
-            #region swith判斷式
+        }
+            #region switch判斷式
 
 
 
@@ -81,7 +81,7 @@ public class Learncondition : MonoBehaviour
             {
                 case "小刀":
                     print("攻擊力10");
-                        break;
+                    break;
                 case "弓箭":
                     print("攻擊力100");
                     break;
@@ -110,11 +110,11 @@ public class Learncondition : MonoBehaviour
                 case Season.winter:
                     print("冬天");
                     break;
-            
+
             }
 
 
-        }
+       
 
         //持續進行方式
         //else  if(布林值){程式，演算法，陳述式}
@@ -126,8 +126,8 @@ public class Learncondition : MonoBehaviour
 
 
     }
-    
-    private  void Update() 
+
+    private void Update()
     {
         if (combo == 10)
         {

@@ -49,6 +49,11 @@ public class Plaryer : MonoBehaviour
     public KeyCode KeySlide = KeyCode.DownArrow;
 
 
+
+   
+
+    private AudioSource aud;
+
     private CapsuleCollider2D cc2d;
     //存取Transform第一種方式
     //public Transform traPlayer;
@@ -61,7 +66,9 @@ public class Plaryer : MonoBehaviour
 
     #endregion
 
-
+    [Header("音效")]
+    public AudioClip soundJump;
+    public AudioClip soundSilde;
 
 
 
@@ -80,7 +87,7 @@ public class Plaryer : MonoBehaviour
         ani = GetComponent<Animator>();
         cc2d = GetComponent<CapsuleCollider2D>();
         countJump = countJumpMax;
-
+        aud = GetComponent<AudioSource>();
        
     }
 
@@ -126,7 +133,7 @@ public class Plaryer : MonoBehaviour
         //print("是否跳躍" + intJump);
 
     
-
+      
         //如果按下按鍵    並且跳躍段數大於 0 往上跳
         if (intJump && countJump > 0)
         {
@@ -136,6 +143,8 @@ public class Plaryer : MonoBehaviour
             countJump--;
 
             ani.SetTrigger(parameterJump);
+
+            aud.PlayOneShot(soundJump);
         }
 
             Collider2D hit = Physics2D.OverlapBox(transform.position + v3Groundoffset, v3GroungSize, 0, LayerGround);
@@ -154,6 +163,9 @@ public class Plaryer : MonoBehaviour
     {
         if (Input.GetKey(KeySlide))
         {
+           if(!aud.isPlaying) aud.PlayOneShot(soundSilde);
+
+
             ani.SetBool(parameterisSlide,true);
 
             cc2d.offset = new Vector2(0.5f, -1f);

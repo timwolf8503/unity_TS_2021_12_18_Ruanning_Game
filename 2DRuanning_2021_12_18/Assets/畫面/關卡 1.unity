@@ -19840,7 +19840,7 @@ MonoBehaviour:
   imghp: {fileID: 690213692}
   texttime: {fileID: 707444301}
   TextScore: {fileID: 1563515427}
-  hp: 10
+  hp: 200
   valeFatToAddHp: 10
   groupFinal: {fileID: 1437386022}
   TextFinalTitle: {fileID: 510315088}
@@ -19990,7 +19990,7 @@ GameObject:
   - component: {fileID: 2017773200}
   - component: {fileID: 2017773199}
   - component: {fileID: 2017773198}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\u53EF\u7A7F\u900F\u5730\u677F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
